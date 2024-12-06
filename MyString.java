@@ -58,8 +58,8 @@ public class MyString {
          
         for (int i=0; i<str1.length(); i++)
         {
-            int count = countChar(str2, str1.charAt(i));
-            if (countChar(str1, str1.charAt((i))) != count)
+            
+            if (countChar(str2, str1.charAt((i))) < countChar(str1, str1.charAt(i)))
             {
                 return false;
             }

@@ -162,7 +162,9 @@ public class Scrabble {
 
 	public static void main(String[] args) {
 		//// Uncomment the test you want to run
-		/// isdictionary
+		/// wordscore
+		System.out.println(MyString.subsetOf("runi", "running"));
+		System.out.println(wordScore("running"));
 		////testBuildingTheDictionary();  
 		////testScrabbleScore();    
 		////testCreateHands();  
