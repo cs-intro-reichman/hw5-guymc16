@@ -160,6 +160,7 @@ public class Scrabble {
 			}
 			//// Replace the following break statement with code
 			//// that completes the game playing loop
+			break;
 			
 		}
 	}
