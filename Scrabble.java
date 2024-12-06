@@ -132,6 +132,8 @@ public class Scrabble {
 		} else {
 			System.out.println("End of hand. Total score: " + score + " points");
 		}
+
+		playGame();
 	}
 
 	
@@ -159,7 +161,7 @@ public class Scrabble {
 			}
 			//// Replace the following break statement with code
 			//// that completes the game playing loop
-			break;
+			
 		}
 	}
 
