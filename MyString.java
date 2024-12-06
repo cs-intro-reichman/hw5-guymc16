@@ -12,6 +12,8 @@ public class MyString {
         System.out.println(subsetOf("pass", "space"));
         System.out.println(subsetOf("c", "space"));
         System.out.println(spacedString(hello));
+        System.out.println("empty string -> \"" + MyString.spacedString("") + "\" (expected: )");
+        System.out.println("hi -> \"" + MyString.spacedString("hi") + "\" (expected: h i)");
         System.out.println(randomStringOfLetters(3));
         System.out.println(randomStringOfLetters(4));
         System.out.println(randomStringOfLetters(5));
@@ -75,6 +77,8 @@ public class MyString {
      */
     public static String spacedString(String str) {
         String ans = "";
+
+        if (str == "") return "";
 
         for (int i = 0; i< str.length() -1; i++)
         {
