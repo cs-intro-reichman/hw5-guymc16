@@ -52,7 +52,7 @@ public class Scrabble {
 		  
 		for (int i=0; i<DICTIONARY.length; i ++)
 		{
-			if (DICTIONARY[i] == word)
+			if (DICTIONARY[i].equals(word))
 			{
 				return true;
 			}
