@@ -110,7 +110,10 @@ public class Scrabble {
 			String input = in.readString();
 			//// Replace the following break statement with code
 			//// that completes the hand playing loop
-			if (input == ".") break;
+			if (input.equals(".")) 
+			{
+				break;
+			}
 
 			else if (isWordInDictionary(input))
 			{
