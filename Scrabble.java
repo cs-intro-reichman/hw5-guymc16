@@ -1,6 +1,9 @@
 /*
  * RUNI version of the Scrabble game.
  */
+
+import java.util.Dictionary;
+
 public class Scrabble {
 	
 
@@ -50,10 +53,12 @@ public class Scrabble {
 	// Checks if the given word is in the dictionary.
 	public static boolean isWordInDictionary(String word) {
 		  
-		for (int i=0; i<DICTIONARY.length; i ++)
+		
+		for (int i=0; i<NUM_OF_WORDS; i ++)
 		{
-			if (DICTIONARY[i] == word)
+			if (DICTIONARY[i] == word.toLowerCase())
 			{
+				
 				return true;
 			}
 		}
@@ -170,6 +175,9 @@ public class Scrabble {
 		/// wordscore
 		System.out.println(MyString.subsetOf("runi", "running"));
 		System.out.println(wordScore("running"));
+		testBuildingTheDictionary();
+		
+		
 		////testBuildingTheDictionary();  
 		////testScrabbleScore();    
 		////testCreateHands();  
