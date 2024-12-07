@@ -151,6 +151,7 @@ public class Scrabble {
 		// The variable in is set to represent the stream of characters 
 		// coming from the keyboard. Used for getting the user's inputs.  
 		In in = new In();
+		String hand = "";
 
 		while(true) {
 			System.out.println("Enter n to deal a new hand, or e to end the game:");
@@ -158,10 +159,18 @@ public class Scrabble {
 			// the user until the user enter the ENTER character.
 			String input = in.readString();
 
-			if (input == "n")
+			if (input.equals("n"))
 			{
-				playHand(createHand());
-			} else if (input == "e")
+				hand = createHand();
+				playHand(hand);
+
+				
+			} else if (input.equals("r"))
+			{
+				playHand(hand);
+			}
+			
+			else if (input.equals("e"))
 			{
 				break;
 			}
@@ -175,8 +184,6 @@ public class Scrabble {
 	public static void main(String[] args) {
 		//// Uncomment the test you want to run
 		/// wordscore
-		System.out.println(MyString.subsetOf("runi", "running"));
-		System.out.println(wordScore("running"));
 		
 		
 		
@@ -185,7 +192,7 @@ public class Scrabble {
 		////testScrabbleScore();    
 		////testCreateHands();  
 		////testPlayHands();
-		////playGame();
+		playGame();
 	}
 
 	public static void testBuildingTheDictionary() {

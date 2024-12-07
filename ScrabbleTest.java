@@ -91,7 +91,7 @@ public class ScrabbleTest {
         
         try {
             Scrabble.playHand("test");
-            //System.out.println("playHand() method exists and accepts String parameter");
+            System.out.println("playHand() method exists and accepts String parameter");
             
             // Test required method calls
             String hand = "cat";
@@ -100,7 +100,7 @@ public class ScrabbleTest {
             MyString.remove(hand, "cat");
             Scrabble.isWordInDictionary("cat");
             Scrabble.wordScore("cat");
-            //System.out.println("All required helper methods are implemented");
+            System.out.println("All required helper methods are implemented");
         } catch (Exception e) {
             System.out.println("Error in test: " + e.getMessage());
         } finally {
