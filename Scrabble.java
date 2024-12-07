@@ -123,12 +123,12 @@ public class Scrabble {
 			else if (isWordInDictionary(input))
 			{
 				score += wordScore(input);
-				System.out.println(input + " earned " + wordScore(input) + " points. score: " + score + " points\n" );
+				System.out.println(input + " earned " + wordScore(input) + " points. score: " + score + " points" );
 				hand = MyString.remove(hand, input);
 
 			} else
 			{
-				System.out.println("No such word in the dictionary. Try again.\n");
+				System.out.println("No such word in the dictionary. Try again.");
 			}
 			
 		}
